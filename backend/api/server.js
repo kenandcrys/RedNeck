@@ -8,7 +8,7 @@ const StraigtGrainsRouter = require('./feedResources/Routers/StraightGrains-rout
 const PoultryRouter = require('./feedResources/Routers/Poultry-router.js');
 const RabbitRouter = require('./feedResources/Routers/Rabbit-router.js');
 const server = express();
-const db = require ('../data/db-config.js')
+
 
 
 server.use(cors());
