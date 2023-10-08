@@ -10,7 +10,7 @@
     "dev:frontend": "npm install --prefix frontend start",
     "sequelize": "npm run --prefix backend sequelize",
     "sequelize-cli": "npm run --prefix backend sequelize-cli",
-    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start": "npm run start-backend && npm run start-frontend",
     "start-backend": "npm start --prefix backend",
     "start-frontend": "npm start --prefix frontend",
     "frontend": "cd frontend && npm install && npm run build",
@@ -26,7 +26,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
   },
   "engines": {
