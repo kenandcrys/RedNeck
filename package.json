@@ -11,7 +11,7 @@
     "sequelize": "npm run --prefix backend sequelize",
     "sequelize-cli": "npm run --prefix backend sequelize-cli",
     "start": "npm run start-backend && npm run start-frontend",
-    "start-backend": "nomemon index.js",
+    "start-backend": "nodemon index.js",
     "start-frontend": "npm start --prefix frontend",
     "frontend": "cd frontend && npm install && npm run build",
     "backend": "cd backend && npm install && npm run build",
@@ -26,12 +26,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "engines": {
     "node": "^18.18.0"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
