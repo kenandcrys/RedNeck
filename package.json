@@ -11,7 +11,7 @@
     "sequelize": "npm run --prefix backend sequelize",
     "sequelize-cli": "npm run --prefix backend sequelize-cli",
     "start": "npm run start-backend && npm run start-frontend",
-    "start-backend": "nodemon index.js",
+    "start-backend": "npm start -- backend",
     "start-frontend": "npm start --prefix frontend",
     "frontend": "cd frontend && npm install && npm run build",
     "backend": "cd backend && npm install && npm run build",

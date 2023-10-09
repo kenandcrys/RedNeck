@@ -1,9 +1,8 @@
 {
   "name": "redneck-feeds-llc",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
